@@ -1,0 +1,838 @@
+#la-lingolet-plu-box img,
+#la-lingolet-plu-box p,
+#la-lingolet-plu-box div {
+    border: none;
+    /*margin: 0px;
+    padding: 0px;
+    width: auto;*/
+}
+#la-lingolet-plu-box img {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.lingolet-clear {
+    clear: both;
+}
+#la-lingolet-translationsPopup {
+    z-index: 999;
+}
+.translatePopup p { padding: 0;}
+.translatePopup p.tp_word_translations {
+    color: #343434 ;
+    font-family: Arial ;
+    font-size: 13px ;
+    font-weight: normal ;
+    letter-spacing: 0px ;
+    line-height: auto ;
+    text-align: left;
+    padding: 0;
+    margin: 5px 0 0;
+    text-transform: none;
+    font-variant: normal;
+}
+.translatePopup p.tp_word_kind {
+    color: #343434 ;
+    font-size: 9px ;
+    font-family: arial ;
+    margin: 3px 0px 0px;
+    padding: 0 ;
+    font-weight: normal ;
+    letter-spacing: 0px ;
+    clear: both;
+    display: none;
+    text-transform: none;
+    font-variant: normal;
+}
+
+.translatePopup {
+    -moz-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.8);
+    background-color: #f7f7f7;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.8);
+    color: #000;
+    display: none;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    line-height: auto;
+    text-align: left;
+    width: 330px;
+    z-index: 999;
+    padding: 0;
+    margin: 0;
+    text-transform: none;
+    font-variant: normal;
+}
+.translatePopup .transl-header {
+    width: 180px;
+    border-bottom: 1px solid #ccc;
+    float: left;
+}
+.translatePopup.phrase .transl-header h2 {
+    color: #648D0B;    
+}
+
+.translatePopup .la-lingolet-check_word_box {
+    background-color: #fff;
+    padding: 12px;
+}
+.translatePopup .tp_checked_word {
+    color: #3b699c ;
+    font-size: 14px ;
+    float: left ;
+    margin: 0px 10px 10px 0px ;
+    padding: 0 ;
+    line-height: 22px ;
+    font-weight: bold ;
+    font-family: Arial ;
+    letter-spacing: 0px ;
+    line-height: auto ;
+    text-align: left;
+    text-transform: none;
+    font-variant: normal;
+}
+.la-lingolet-speaker {
+    margin: 3px 5px 0px 0px;
+    display: none;
+    float: left;
+}
+.la-lingolet-more {
+    margin: 3px 5px 0px 0px;
+    display: block;
+    float: left;
+}
+.la-lingolet-more:active { background: none; }
+.translatePopup .addMemoWord, #dictionaryPopup .addMemoWord {
+    font: bold 11px/25px Arial ;
+    text-shadow: 0px 1px 1px #214c88 ;
+    color: #fff ;
+    cursor: pointer ;
+    float: right ;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    height: 25px ;
+    width: 70px ;
+    background: #3286ce ;
+    letter-spacing: 0px ;
+    padding: 0;
+    margin: 0;
+    text-transform: none;
+    font-variant: normal;
+}
+.translatePopup .addMemoWord:hover, #dictionaryPopup .addMemoWord:hover {
+    background: #295ea8 ;
+}
+#la-lingolet-plu-box {
+    bottom: 30px ;
+    position: fixed;
+    right: 15px ;
+}
+#la-lingolet-plu-box > div {
+    height: 50px;
+    position: relative;
+    width: 370px;
+}
+#la-lingolet-start-popup,
+#la-lingolet-message-info {
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.8);
+    background-color: #f7f7f7;
+    border: 1px solid #dfdfdf !important;
+    border-radius: 2px 2px 2px 2px;
+    bottom: 34px;
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.8);
+    color: #000;
+    display: block;
+    font-family: arial;
+    font-size: 12px;
+    font-weight: normal;
+    height: 70px;
+    letter-spacing: 0px;
+    line-height: auto;
+    padding: 10px !important;
+    position: absolute;
+    right: 1px;
+    text-align: left;
+    width: 310px !important;
+    z-index: 999;
+    text-align: left;
+    margin: 0;
+    text-transform: none;
+    font-variant: normal;
+}
+#la-lingolet-start-popup > div,
+#la-lingolet-message-info > div {
+    background-color: #f7f7f7;
+    padding: 5px;
+    text-align: left;
+}
+#la-lingolet-start-popup h2,
+#la-lingolet-message-info h2 {
+    color: #2581c4;
+    margin: 0px 0px 5px 0px;
+    font-family: Arial ;
+    font-size: 12px ;
+    font-weight: normal ;
+    letter-spacing: 0px ;
+    line-height: auto ;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    text-transform: none;
+    font-variant: normal;
+}
+#la-lingolet-start-popup p.la-lingolet-user_info {
+    color: #414141 ;
+    font-size: 16px ;
+    font-family: Arial ;
+    font-weight: normal ;
+    letter-spacing: 0px ;
+    line-height: auto ;
+    text-align: left;
+    padding: 0;
+    margin: 5px 0;
+    text-transform: none;
+    font-variant: normal;
+}
+#la-lingolet-start-popup p.la-lingolet-info {
+    clear: both ;
+    color: #a7a7a7 ;
+    font-family: Arial ;
+    font-size: 12px ;
+    font-weight: normal ;
+    letter-spacing: 0px ;
+    line-height: auto ;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    text-transform: none;
+    font-variant: normal;
+}
+#la-lingolet-start-popup {
+    display: none;
+}
+#la-lingolet-miniPopup {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    width: 359px;
+    height: 29px;
+    border-radius: 6px;
+    background-image: linear-gradient(bottom, rgb(26,163,197) 0%, rgb(44,197,231) 50%);
+    background-image: -o-linear-gradient(bottom, rgb(26,163,197) 0%, rgb(44,197,231) 50%);
+    background-image: -moz-linear-gradient(bottom, rgb(26,163,197) 0%, rgb(44,197,231) 50%);
+    background-image: -webkit-linear-gradient(bottom, rgb(26,163,197) 0%, rgb(44,197,231) 50%);
+    background-image: -ms-linear-gradient(bottom, rgb(26,163,197) 0%, rgb(44,197,231) 50%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(26,163,197)),
+        color-stop(0.5, rgb(44,197,231))
+    );
+    padding: 1px;
+    z-index: 999;
+    position: absolute;
+    right: 1px;
+    display: none;
+    font-family: Sans-serif;
+}
+#la-lingolet-miniPopup-cont {
+    width: 347px;
+    height: 21px;
+    background: #28c0e4;
+    border-radius: 6px;
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.25) inset;
+    position: relative;
+    padding: 4px 6px;
+}
+.lingolet-logo {
+    width: 58px;
+    height: 15px;
+    float: right;
+    overflow: hidden;
+    margin: 3px 0;
+}
+.lingolet-logo img {
+    border: none;
+}
+.la-lingolet-input-wrap {
+    background: #ffffff;
+    background: -moz-linear-gradient(-45deg,  #ffffff 0%, #ffffff 62%, #e4e0dc 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ffffff), color-stop(62%,#ffffff), color-stop(100%,#e4e0dc));
+    background: -webkit-linear-gradient(-45deg,  #ffffff 0%,#ffffff 62%,#e4e0dc 100%);
+    background: -o-linear-gradient(-45deg,  #ffffff 0%,#ffffff 62%,#e4e0dc 100%);
+    background: linear-gradient(135deg,  #ffffff 0%,#ffffff 62%,#e4e0dc 100%);
+    width: 90px !important;
+    height: 12px !important;
+    border: 1px solid #2fa2bb !important;
+    border-radius: 3px !important;
+    margin: 2px 0px !important;
+    padding: 2px 7px !important;
+    float: left;
+}
+#check_word {
+    color: #919191;
+    font: 10px/1.0 sans-serif !important;
+    border: none;
+    width: 90px;
+    background: transparent;
+    height: 12px;
+    outline: none;
+}
+.lingolet-separator {
+    margin: 1px 5px;
+    float: left;
+}
+.lingolet-icon {
+    float: left;
+    margin: 3px 0;
+    cursor: pointer;
+}
+/*
+#la-lingolet-miniPopup > div.la-lingolet-input-wrap {
+    border-bottom: 1px solid #dfdfdf;
+    padding: 8px;
+}
+#la-lingolet-miniPopup > div.la-lingolet-input-wrap input {
+    border: 1px solid #dfdfdf;
+    color: #bcbcbc;
+    font-size: 12px;
+    padding: 4px;
+    width: 158px;
+    font-family: Arial ;
+    font-size: 12px ;
+    font-weight: normal ;
+    letter-spacing: 0px ;
+    line-height: auto ;
+    text-align: left;
+    margin: 0;
+    text-transform: none;
+    font-variant: normal;
+}
+#la-lingolet-miniPopup .menu-item {
+    border-bottom: 1px solid #dfdfdf;
+    border-top: 1px solid #fff;
+    padding: 5px;
+}
+#la-lingolet-miniPopup .menu-item > div {
+    color: #000;
+    cursor: pointer;
+    display: block;
+    font-weight: normal;
+    text-decoration: none;
+    height: 20px ;
+}
+#la-lingolet-miniPopup .menu-item > div > img {
+    border: 0px;
+    float: left;
+    margin: 0px;
+    padding: 2px;
+}
+#la-lingolet-miniPopup .menu-item > div > div {
+    color: #000 ;
+    margin-left: 25px ;
+    font-size: 13px ;
+    font-weight: normal ;
+    padding: 0 ;
+    line-height: 20px ;
+    font-family: Arial ;
+    letter-spacing: 0px ;
+    line-height: auto ;
+    text-align: left;
+    text-transform: none;
+    font-variant: normal;
+}
+#la-lingolet-miniPopup .lingapp-site {
+    border-right: 1px solid #dfdfdf;
+    border-top: 1px solid #fff;
+    padding: 5px;
+}
+#la-lingolet-miniPopup .la-lingolet-menu-help {
+    border-right: 1px solid #dfdfdf;
+}
+#la-lingolet-miniPopup .la-lingolet-menu-help img,
+#la-lingolet-miniPopup .la-lingolet-menu-settings img {
+    border: 0px;
+    float: none;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 2px;
+}
+#la-lingolet-miniPopup .la-lingolet-menu-help,
+#la-lingolet-miniPopup .la-lingolet-menu-settings {
+    border-left: 1px solid #fff;
+    cursor: pointer;
+    float: left;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+}
+*/
+#la-lingolet-rollup {
+    border: 0px none;
+    bottom: 33px;
+    cursor: pointer;
+    display: none;
+    height: 13px;
+    margin: 0px;
+    opacity: 0.99;
+    overflow: hidden;
+    position: absolute;
+    right: 3px;
+    visibility: visible;
+    width: 28px;
+    z-index: 995;
+}
+#lingappIcon {
+    border: 0px none;
+    bottom: 0px;
+    cursor: pointer;
+    height: 29px;
+    margin: 0px;
+    opacity: 0.99;
+    overflow: hidden;
+    position: absolute;
+    right: 2px;
+    visibility: visible;
+    width: 29px;
+    z-index: 999;
+}
+#la-lingolet-login-popup {
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.8);
+    background-color: #f7f7f7;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.8);
+    color: #000;
+    display: none;
+    font-family: arial;
+    font-size: 12px;
+    font-weight: normal;
+    height: 110px;
+    letter-spacing: 0px;
+    line-height: 22px;
+    padding: 15px;
+    position: absolute;
+    text-align: left;
+    width: 400px;
+    z-index: 1001;
+}
+#la-lingolet-login-popup > div {
+    background-color: #f7f7f7;
+    padding: 5px;
+    text-align: center;
+}
+#la-lingolet-login-popup > div h2 {
+    color: #414141;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial ;
+    font-size: 14px ;
+    font-weight: normal ;
+    letter-spacing: 0px ;
+    line-height: auto ;
+    text-align: left;
+    text-transform: none;
+    font-variant: normal;
+}
+#la-lingolet-login-popup > div > div {
+    margin: 15px auto 0px;
+    width: 180px;
+}
+#la-lingolet-login-popup-go {
+    background-color: #157fbb;
+    border-radius: 2px 2px 2px 2px;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    padding: 4px 0px;
+    width: 80px;
+}
+#la-lingolet-login-popup-cancel {
+    background-color: #a7a7a7;
+    border-radius: 2px 2px 2px 2px;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    margin-left: 20px;
+    padding: 4px 0px;
+    width: 80px;
+    font-family: Arial ;
+    font-size: 12px ;
+    font-weight: normal ;
+    letter-spacing: 0px ;
+    line-height: auto ;
+    text-align: center;
+    text-transform: none;
+    font-variant: normal;
+}
+#la-lingolet-login-popup > div p {
+    clear: both;
+    color: #a7a7a7;
+    margin: 5px auto 0px;
+    padding: 5px;
+}
+.la-lingolet-add-popup {
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.8);
+    background-color: #f7f7f7;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px 2px 2px 2px;
+    bottom: 50px;
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.8);
+    color: #000;
+    display: none;
+    font-family: arial;
+    font-size: 12px;
+    font-weight: normal;
+    height: 170px;
+    letter-spacing: 0px;
+    line-height: 22px;
+    padding: 15px;
+    position: absolute;
+    right: 315px;
+    text-align: left;
+    width: 400px;
+    z-index: 999;
+}
+.la-lingolet-add-popup > div {
+    background-color: #f7f7f7;
+}
+.la-lingolet-add-popup > div > h2 {
+    color: #414141;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial ;
+    font-size: 14px ;
+    font-weight: normal ;
+    letter-spacing: 0px ;
+    line-height: auto ;
+    text-align: left;
+    text-transform: none;
+    font-variant: normal;
+}
+.la-lingolet-add-popup-info-box {
+    background-color: #fff;
+    border: 1px solid #dfdfdf;
+    height: 45px;
+    margin: 15px 0px 0px;
+    padding: 5px;
+}
+.la-lingolet-add-popup-info-box h2 {
+    color: #2581c4;
+    overflow: hidden;
+    width: 382px;
+    font-family: Arial ;
+    font-size: 16px ;
+    font-weight: normal ;
+    letter-spacing: 0px ;
+    line-height: auto ;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    text-transform: none;
+    font-variant: normal;
+}
+.la-lingolet-add-popup-title {
+    display: block;
+    white-space: nowrap;
+    width: 1200px;
+}
+.la-lingolet-add-popup-info-box p {
+    display: block;
+    margin: 0px;
+    overflow: hidden;
+    padding: 0px;
+    width: 382px;
+}
+.la-lingolet-add-popup-favico {
+    margin: 0px 6px 0px 0px;
+}
+.la-lingolet-add-popup-link {
+    vertical-align: text-bottom;
+    white-space: nowrap;
+    width: 1200px;
+}
+.la-lingolet-add-popup-confirm {
+    margin: 15px 0px;
+    text-align: center;
+}
+.la-lingolet-add-popup-confirm p {
+    clear: both;
+    color: #222;
+    margin: 0px;
+    padding: 0px 0px 5px;
+    text-align: left;
+}
+.la-lingolet-add-popup-add {
+    background-color: #157fbb;
+    border-radius: 2px 2px 2px 2px;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    padding: 4px 0px;
+    width: 80px;
+}
+.la-lingolet-add-popup-cancel {
+    background-color: #a7a7a7;
+    border-radius: 2px 2px 2px 2px;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    margin-left: 20px;
+    padding: 4px 0px;
+    width: 80px;
+    font-family: Arial ;
+    font-size: 12px ;
+    font-weight: normal ;
+    letter-spacing: 0px ;
+    line-height: auto ;
+    text-align: left;
+    text-transform: none;
+    font-variant: normal;
+}
+#dictionaryPopup {
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.8);
+    background-color: #f7f7f7;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px 2px 2px 2px;
+    bottom: 68px;
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.8);
+    color: #000;
+    display: none;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    line-height: 22px;
+    padding: 12px;
+    position: fixed;
+    right: 215px;
+    text-align: left;
+    width: 330px;
+    z-index: 999;
+    text-transform: none;
+}
+#dictionaryPopup > div {
+    background-color: #fff;
+    border: 1px solid #dfdfdf;
+    padding: 12px;
+}
+#dictionaryPopup h2 {
+    color: #2581c4;
+    float: left;
+    font-family: Arial ;
+    font-size: 13px ;
+    font-weight: normal ;
+    letter-spacing: 0px ;
+    line-height: auto ;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    text-transform: none;
+    font-variant: normal;
+}
+#dictionaryPopup p {
+    margin: 0px;
+    padding: 0px;
+}
+#dictionaryPopup #dict-header {
+    border-bottom: 1px solid #CCCCCC;
+    float: left;
+    width: 180px;
+}
+#dictionaryPopup .addMemoWord {
+    background-color: #386ba2;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px 0px;
+    padding: 0px 2px;
+    text-align: center;
+    width: 60px;
+    font-family: Arial ;
+    font-size: 10px ;
+    font-weight: normal ;
+    letter-spacing: 0px ;
+    line-height: auto ;
+    text-transform: none;
+    font-variant: normal;
+}
+#la-lingolet-testboxPopup {
+    display: none;
+    height: 425px;
+    position: absolute;
+    width: 806px;
+    z-index: 1000;
+}
+#la-lingolet-testboxPopup iframe {
+    border: 0px none;
+    height: 800px;
+    padding: 15px;
+    width: 794px;
+}
+#la-lingolet-testboxPopup .spinner {
+    position: absolute;
+    left: 345px;
+    top: 179px;
+    z-index: -1;
+}
+#la-lingolet-testboxPopup-close {
+    height: 22px;
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    width: 22px;
+}
+#la-lingolet-message-info {
+    display: none;
+}
+div.blackLayer {
+    position: fixed;
+    width:100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.6);
+    left:0;
+    top:0;
+    display: none;
+}
+#la-lingolet-popup-big-translation {
+    display: none;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: 3px 3px 3px #333333;
+    padding-right: 20px;
+    position: fixed;
+    min-width: 330px;
+    z-index: 4000;
+    font-family: Helvetica, Arial;
+}
+#la-lingolet-popup-big-translation .type-box { min-height: 70px; }
+#la-lingolet-popup-big-translation p { padding: 0; line-height: 19px; }
+#la-lingolet-popup-big-translation .close {
+    height: 22px;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 22px;   
+    cursor: pointer;
+}
+#la-lingolet-popup-big-translation .word-header {
+    height: 20px;
+    position: relative;
+}
+#la-lingolet-popup-big-translation .word-header #la-word-more-value {
+    color: #0084B4;
+    margin: 10px 0 0 25px;
+    font-family: Arial ;
+    font-size: 17px ;
+    font-weight: bold ;
+    letter-spacing: 0px ;
+    line-height: auto ;
+    text-align: left;
+    padding: 0;
+    text-transform: none;
+    font-variant: normal;
+}
+#la-lingolet-popup-big-translation .definitions { overflow: hidden; }
+#la-lingolet-popup-big-translation .type-column:first-child { margin-right: 30px; }
+#la-lingolet-popup-big-translation .type-column { float: left; max-width: 200px; }
+#la-lingolet-popup-big-translation .word-header .addMemoWord {
+    background: none repeat scroll 0 0 #3286CE ;
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF ;
+    cursor: pointer ;
+    float: right ;
+    font: bold 11px/25px Arial ;
+    height: 25px ;
+    text-align: center;
+    text-shadow: 0 1px 1px #214C88 ;
+    width: 70px ;
+    margin: -20px -10px 0px 0px;
+    letter-spacing: 0px ;
+    padding: 0;
+    text-transform: none;
+    font-variant: normal;
+}
+#la-lingolet-popup-big-translation .word-header .addMemoWord:hover {
+    background: #295ea8 ;
+}
+#la-lingolet-popup-big-translation .word-details {
+    clear: left;
+    margin-bottom: 40px;
+    padding-left: 20px;
+}
+#la-lingolet-popup-big-translation .word-details .type {
+    color: #6E6E6E;
+    font-size: 11px;
+    font-weight: bold;
+    margin: 18px 0 5px 6px;
+    text-transform: uppercase;
+    clear: both;
+    font-family: Arial ;
+    letter-spacing: 0px ;
+    line-height: auto ;
+    text-align: left;
+    padding: 0;
+    font-variant: normal;
+}
+#la-lingolet-popup-big-translation .word-details .part {
+    border-bottom: 1px solid #0084B4;
+    color: #0084B4;
+    margin: 15px 0 10px 7px;
+    padding-bottom: 4px;
+    font-family: Arial ;
+    font-size: 13px ;
+    font-weight: normal ;
+    letter-spacing: 0px;
+    line-height: auto;
+    text-align: left;
+    text-transform: none;
+    font-variant: normal;
+}
+#la-lingolet-popup-big-translation .word-details p {
+    margin: 0 0 0 30px;
+    font-size: 13px;
+    line-height: 19px;
+    font-family: Arial;
+    font-weight: normal;
+    letter-spacing: 0px;
+    text-align: left;
+    padding: 0;
+    text-transform: none;
+    font-variant: normal;
+}
+#la-lingolet-popup-big-translation .word-details li {
+    list-style: none outside none;
+    margin-left: 30px;
+    font-size: 13px;
+    line-height: 19px;
+    text-transform: none;
+    font-variant: normal;
+    font-family: Arial;
+    font-weight: normal;
+    letter-spacing: 0px;
+    text-align: left;
+    padding: 0;
+    text-transform: none;
+    font-variant: normal;
+}
+#la-lingolet-analytics-iframes {
+    display: block;
+    width: 1px;
+    height: 1px;
+    visibility: hidden;
+    overflow: hidden;
+}
